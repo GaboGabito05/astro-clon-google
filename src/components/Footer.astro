@@ -1,27 +1,31 @@
+---
+const footerLinksLeft = [
+    { name: 'Sobre Google', url: '#' },
+    { name: 'Publicidad', url: '#' },
+    { name: 'Negocios', url: '#' },
+    { name: 'Cómo funciona la Búsqueda', url: '#' },
+];
+
+const footerLinksRight = [
+    { name: 'Privacidad', url: '#' },
+    { name: 'Condiciones', url: '#' },
+    { name: 'Preferencias', url: '#' },
+];
+---
+
 <footer>
     <ul class="footer-left">
-        <li>
-            <a href="#">Sobre Google</a>
-        </li>
-        <li>
-            <a href="#">Publicidad</a>
-        </li>
-        <li>
-            <a href="#">Negocios</a>
-        </li>
-        <li>
-            <a href="#">Cómo funciona la Búsqueda</a>
-        </li>
+        {footerLinksLeft.map(link => (
+            <li>
+                <a href={link.url}>{link.name}</a>
+            </li>
+        ))}
     </ul>
     <ul class="footer-right">
-        <li>
-            <a href="#">Privacidad</a>
-        </li>
-        <li>
-            <a href="#">Condiciones</a>
-        </li>
-        <li>
-            <a href="#">Preferencias</a>
-        </li>
+        {footerLinksRight.map(link => (
+            <li>
+                <a href={link.url}>{link.name}</a>
+            </li>
+        ))}
     </ul>
 </footer>
