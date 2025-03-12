@@ -169,3 +169,19 @@ footer ul li a{
     margin: 10px;
     color: #5f6368;
 }
+
+.timer {
+    display: none; /* Oculto por defecto */
+    font-size: 16px;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.timer span {
+    font-weight: bold;
+    color: #d9534f; /* Color rojo para el contador */
+}
